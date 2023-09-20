@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tortiya</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.cdnfonts.com/css/mercurius-script-mt-bold" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>HOLAA</h1>
+    <header>
+        <img src="../images/logo.png" alt="logo" class="logo">
+    </header>
+    <nav class="menu">
+        <ul class="navigation">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobreNosotros">Conocenos</a></li>
+            <li><a href="#encargue">Encarga</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="inicio">
+            <div class="grid_imagenes">
+                <img src="../images/decoracion2.jpeg" alt="">
+                <img class="sacarlas_para_responsive" src="../images/decoracion.jpeg" alt="">
+                <img class="sacarlas_para_responsive" src="../images/decoracion3.jpeg" alt="">
+                <img class="sacarlas_para_responsive" src="../images/imagen.jpeg" alt="">
+            </div>
+            <div class="seccion_texto">
+                <h1>La mejor expiencia gastronomica </h1>
+                <p>Disfruta de la mejor tortilla de papa, echa con los mejores productos de la zona
+                    y la mayor profesionalidad
+                </p>
+            </div>
+        </section>
+        <section id="sobreNosotros">
+            <div class="seccion_texto">
+                <h1>Quienes somos</h1>
+                <div class="grid_imagenes">
+                    <img class="sacarlas_para_responsive" src="../images/imagen2.jpeg" alt="">
+                    <img src="../images/images.jpeg" alt="">
+                    <img class="sacarlas_para_responsive" src="../images/decoracion.jpeg" alt="">
+                </div>
+                <img src="" alt="">
+                <p>Somos un emprendimiento familiar que te trae una nueva experiencia gastronomica, desde España a
+                    Argentina traemos la propuesta de colocar
+                    a la tortilla de papa como buque insignia de la gastronomia Argentina, somos tortiya
+                </p>
+            </div>
+
+        </section>
+        <section id="encargue" class="seccion_producto">
+            <h1>Pueba tu tortiya</h1>
+            <img src="../images/imagen.jpeg" alt="">
+            <button id="encargarButton">Encargar</button>
+        </section>
+        <footer class="primer_footer">
+            <div class="tecnologias">
+                <p>Desarrollado con:</p>
+                <img src="../images/js.png" alt="">
+                <img src="../images/descarga.jpeg" alt="">
+            </div>
+            <ul>
+                </br>
+                <li>Desarrollado por: leonardosanchez119@gmail.com</li>
+                </br>
+                <li><a href=""><img src="../images/instagram.jpeg" alt="logo de instagram">tortiya</a></li>
+                
+            </ul>
+            <ul>
+                <li>Tandil, Provincia de Buenos Aires</li>
+                <li>Direccion:Newton 1674</li>
+               
+            </ul>
+          
+          
+        </footer>
+        
+    </main>
+    <footer class="segundo_footer">
+        <p>© 2023 <span>Tortiya</span>. Todos los derechos reservados</p>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/menuResponsive.js"></script>
 </body>
+
 </html>
