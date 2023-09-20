@@ -1,0 +1,332 @@
+* {
+    background-color: #facdb9;
+}
+
+/* Custom properties */
+/* :root {
+    --background-color_de_algunas_partes: #f39d75;
+} */
+
+@media only screen and (max-width: 659px) {
+    .logo {
+        margin-left: 5%;
+        width: 100px;
+        /* Ancho más chiquitologotipo */
+        height: auto;
+        /* Mantener la relación de aspecto */
+        border-radius: 50%;
+        background-image: url('/images/fondo.jpeg');
+    }
+    
+    header {
+        position: relative;
+        height: 150px;
+        /* Altura más chiquita para el encabezado */
+        width: 100%;
+        background-image: url('/images/fondo.jpeg');
+        background-size: contain;
+        /* Ajustar el tamaño de la imagen de fondo */
+    
+    }
+    
+    /* Estilos para el menú de navegación en pantallas más pequeñas (inicialmente oculto) */
+    .navigation {
+        display: none;
+        /* ...otros estilos... */
+    }
+    
+    /* Estilos para el menú cuando está abierto */
+    .navigation.show {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    
+        /* ...otros estilos... */
+    }
+    
+    ul,
+    li,
+    a {
+        background-color: #f39d75;
+        text-decoration: none;
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+        width: 30%;
+    }
+    
+    main {
+        margin-top: 10%;
+    
+    }
+    
+    section h1 {
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+    }
+    
+    .sacarlas_para_responsive {
+        display: none;
+    }
+    
+    section,
+    .seccion_texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+    
+        width: 25%;
+        align-items: center;
+        margin: 2% auto;
+        /* Esto centra el contenedor horizontalmente */
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+        height: 30px;
+        font-size: medium;
+        border-radius: 10%;
+        background-color:#f39d75;
+    
+    }
+    
+    section, h1{
+        margin-top: 4%;
+        background-color:#f39d75;
+    }
+    .primer_footer img {
+        
+        width: 40px;
+        /* Tamaño de imagen deseado */
+        height: auto;
+        border-radius: 20%;
+        margin-right: 10px;
+        /* Espacio entre las imágenes */
+    }
+   .tecnologias, p, img{
+    background-color:#f39d75;
+    margin-left: 3%;
+   }
+    .primer_footer{
+        margin-top: 5%;
+        display: flex;
+        background-color:#f39d75;
+    }
+    footer,ul{
+        display: flex;
+        flex-direction: column;
+        font-style: none;
+        list-style: none;
+
+   }
+   footer,div, .tecnologias, p{
+    background-color: #f39d75;
+    font-size: large;
+   
+    }
+
+span {
+    font-family: 'Mercurius Script MT Bold', sans-serif;
+    font-size: large;
+    background-color: #f39d75;
+}
+}
+
+@media only screen and (min-width: 660px) {
+    .sacarlas_para_responsive {
+        display: block;
+    }
+
+    /* Estilo para el encabezado */
+    header {
+        position: relative;
+        height: 150px;
+        /* Altura más chiquita para el encabezado */
+        width: 100%;
+        background-image: url('/images/fondo.jpeg');
+        background-size: contain;
+        /* Ajustar el tamaño de la imagen de fondo */
+
+    }
+
+    /* Estilo logotipo */
+    .logo {
+        margin-left: 5%;
+        width: 100px;
+        /* Ancho más chiquitologotipo */
+        height: auto;
+        /* Mantener la relación de aspecto */
+        border-radius: 50%;
+        background-image: url('/images/fondo.jpeg');
+    }
+
+    .menu {
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+        font-size: x-large;
+        position: fixed;
+        width: 98.89%;
+        background-color:#f39d75;
+        z-index: 1000;
+    }
+
+    ul.navigation {
+
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0;
+        /* Establecer margen izquierdo a 0 */
+    }
+
+
+    ul,
+    li,
+    a {
+        background-color:#f39d75;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        justify-content: left;
+        color: white;
+    }
+
+    main {
+        margin-top: 10%;
+    }
+
+    section {
+        display: flex;
+    }
+
+    .grid_imagenes {
+        display: grid;
+        background-color: #f39d75;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5%;
+        /* Ajusta el espacio horizontal entre las columnas */
+        grid-row-gap: 6%;
+        /* Ajusta el espacio vertical entre las filas (si es necesario) */
+    }
+
+    /* Define la animación */
+    @keyframes moveUp {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10%);
+            /* Ajusta la distancia del movimiento hacia arriba */
+        }
+    }
+
+    .grid_imagenes img {
+        margin: 5% 5%;
+
+        max-width: 100%;
+        /* Hace que las imágenes se ajusten al ancho del contenedor */
+        height: auto;
+        /* Mantiene la proporción de aspecto de las imágenes */
+        width: 100%;
+        /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+        animation: moveUp 1s ease-in-out infinite alternate;
+        /* Ajusta la duración y el efecto de la animación */
+
+    }
+
+    h1 {
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+        color: white;
+    }
+
+    div.seccion_texto,
+    h1,
+    p {
+        background-color: #f39d75;
+        border-radius: 1%;
+    }
+
+    .seccion_texto {
+        margin: 5% 5%;
+        font-size: larger;
+    }
+
+    .seccion_texto,
+    p {
+        font-size: xx-large;
+        color: white;
+    }
+
+    .seccion_producto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        /* Esto permite centrar verticalmente */
+        width: 50%;
+        margin: 0 auto;
+        /* Esto centra el contenedor horizontalmente */
+        background-color: #f39d75;
+        border-radius: 1%;
+        margin-bottom: 5%;
+    }
+
+    button {
+
+        width: 25%;
+        align-items: center;
+        margin: 2% auto;
+        /* Esto centra el contenedor horizontalmente */
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+        height: 30px;
+        font-size: medium;
+        border-radius: 10%;
+
+
+    }
+
+    /* Estilo para el footer */
+    footer {
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3%;
+        /* Ajusta el espacio interior del footer */
+
+    }
+
+    /* Estilo para las imágenes en el footer */
+    footer img {
+        width: 40px;
+        /* Tamaño de imagen deseado */
+        height: auto;
+        border-radius: 20%;
+        margin-right: 10px;
+        /* Espacio entre las imágenes */
+    }
+
+    /* Estilo para la lista en el footer */
+    footer ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo para los elementos de lista en el footer */
+
+
+    .primer_footer,
+    .tecnologias {
+        background-color: #f39d75;
+    }
+
+    .segundo_footer {
+        background-color: #f39d75;
+        font-size: large;
+    }
+
+    span {
+        font-family: 'Mercurius Script MT Bold', sans-serif;
+        font-size: large;
+        background-color: #f39d75;
+    }
+}
