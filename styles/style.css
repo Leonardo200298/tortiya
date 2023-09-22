@@ -162,7 +162,7 @@ span {
         font-size: x-large;
         position: fixed;
         width: 98.89%;
-        background-color:#f39d75;
+        background-color:#ee753c;
         z-index: 1000;
     }
 
@@ -178,7 +178,7 @@ span {
     ul,
     li,
     a {
-        background-color:#f39d75;
+        background-color:#ee753c;
         list-style: none;
         text-decoration: none;
         display: flex;
@@ -196,7 +196,7 @@ span {
 
     .grid_imagenes {
         display: grid;
-        background-color: #f39d75;
+        background-color:#ee753c;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5%;
         /* Ajusta el espacio horizontal entre las columnas */
@@ -238,7 +238,7 @@ span {
     div.seccion_texto,
     h1,
     p {
-        background-color: #f39d75;
+        background-color:#ee753c;
         border-radius: 1%;
     }
 
@@ -262,7 +262,7 @@ span {
         width: 50%;
         margin: 0 auto;
         /* Esto centra el contenedor horizontalmente */
-        background-color: #f39d75;
+        background-color:#ee753c;
         border-radius: 1%;
         margin-bottom: 5%;
     }
@@ -316,11 +316,11 @@ span {
 
     .primer_footer,
     .tecnologias {
-        background-color: #f39d75;
+        background-color:#ee753c;
     }
 
     .segundo_footer {
-        background-color: #f39d75;
+        background-color: #ee753c;
         font-size: large;
     }
 
