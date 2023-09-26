@@ -1,7 +1,7 @@
 "use strict";
 
 // Agrega un event listener al botón de la imagen del logo
-document.querySelector("header .logo").addEventListener("click", toggleMenu);
+document.querySelector("header .hamburger-menu").addEventListener("click", toggleMenu);
 
 // Agrega un event listener al evento de cambio de tamaño de ventana
 window.addEventListener("resize", handleResize);

@@ -1,10 +1,11 @@
-body{
+body {
     background-image: url('/images/fondoActualizadoConMadera.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* Custom properties */
 /* :root {
     --background-color_de_algunas_partes: #f39d75;
@@ -13,19 +14,20 @@ body{
     font-family: script;
     src: url(/fonts/script.ttf);
 }
+
 @media only screen and (max-width: 659px) {
     .logo {
         margin-left: 40%;
         width: 100px;
         /* Ancho más chiquitologotipo */
-        height: 130px;
+        height: 150px;
         /* Mantener la relación de aspecto */
         margin-top: 10px;
         /* presentar como segunda opcion sacar el relleno de fondo */
-        background-image: url('/images/posibleHeader.png');
         
+
     }
-    
+
     header {
         position: relative;
         height: 150px;
@@ -34,130 +36,197 @@ body{
         background-image: url('/images/posibleHeader.png');
         background-size: contain;
         /* Ajustar el tamaño de la imagen de fondo */
-    
+
     }
-    
+
     /* Estilos para el menú de navegación en pantallas más pequeñas (inicialmente oculto) */
     .navigation {
         display: none;
         /* ...otros estilos... */
     }
-    
+
     /* Estilos para el menú cuando está abierto */
     .navigation.show {
         display: flex;
         flex-direction: column;
         list-style: none;
-    
+
         /* ...otros estilos... */
     }
-    
-    .menu
-    {
-        background-image: url('/images/posibleHeader.png');
+    ul,li,a{
         text-decoration: none;
+        color: black;
+
+    }
+    
+    .menu {
+        background-image: url('/images/posibleHeader.png');
         font-family: script;
         width: 30%;
-        color: rgb(0, 0, 0);
+        
+        
     }
-    
+
     main {
         margin-top: 10%;
-    
+
     }
-   
-    section h1 {
-        font-family: 'Mercurius Script MT Bold', sans-serif;
+
+    h1 {
+        font-family: script;
+        font-size: xx-large;
+        color: white;
     }
-    
+
     .sacarlas_para_responsive {
         display: none;
     }
+    .hamburger-menu{
+        display: block;
+    }
     
+    .hamburger-menu img{
+        width: 10%;
+        height: 40%;
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        
+    }
     section,
     .seccion_texto {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color:white;
     }
-    
-    button img{
-    
-   
+
+    button img {
+
+
         align-items: center;
-       
+
         /* Esto centra el contenedor horizontalmente */
-        font-family: 'Mercurius Script MT Bold', sans-serif;
         height: 30px;
-        
+
         border-radius: 10%;
-        
-    
+
+
     }
-  
-    section, h1{
+    button{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    section,
+    h1 {
         margin-top: 4%;
-        background-color:#FF0000;
+        background-color: #FF0000;
+        opacity: 0.9;
     }
+
     .primer_footer img {
-        
+
         width: 40px;
         /* Tamaño de imagen deseado */
         height: auto;
         border-radius: 20%;
         margin-right: 10px;
         /* Espacio entre las imágenes */
+        color:white;
+        
     }
-   .tecnologias, p, img{
-    background-color:#FF0000;
-    margin-left: 3%;
-   }
-    .primer_footer{
+
+    .tecnologias,
+    p {
+        background-color: #FF0000;
+        opacity: 0.9;
+        margin-left: 9%;
+      
+    }
+
+    .primer_footer {
         margin-top: 5%;
         display: flex;
-        background-color:#FF0000;
+        background-color: #FF0000;
+        opacity: 0.9;
+        color:white;
     }
-    footer,ul{
+
+    footer,
+    ul {
         display: flex;
         flex-direction: column;
         font-style: none;
         list-style: none;
+        color:white;
+
+    }
+
+    footer,
+    .primer_footer,
+    .tecnologias,
+    p {
+        background-color: #FF0000;
+        opacity: 0.9;
+        font-size: large;
        
-
-   }
-   footer,.primer_footer,.tecnologias, p{
-    background-color:#FF0000;
-    font-size: large;
-   
-    }
-    ul .lista_para_responsive li a{
-        background-color:#FF0000;
     }
 
-span {
-    font-family: 'Mercurius Script MT Bold', sans-serif;
-    font-size: large;
-    background-color:#FF0000;
+    ul .lista_para_responsive li a {
+        background-color: #FF0000;
+        opacity: 0.9;
+        color:white;
+    }
+
+    span {
+        font-family: script;
+        font-size: large;
+        background-color: #FF0000;
+        opacity: 0.9;
+    }
+
+    /* Agrega una clase única al elemento del footer */
+
+    .lista_para_responsive li a{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color:white;
+    
+    }
+
+
+
+.bar {
+    margin-left: 3%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 30px;
+    height: 3px;
+    background-color: #000; /* Color de las barras */
+    margin: 4px 0;
 }
-
-/* Agrega una clase única al elemento del footer */
-
-
-
+.lista_para_responsive li{
+    color:white;
+}
 
 }
 
 @media only screen and (min-width: 660px) {
-    .sacarlas_para_responsive {
+    .sacarlas_para_responsive, .hamburger-menu {
         display: block;
     }
-
+    .hamburger-menu{
+        display: none;
+    }
     /* Estilo para el encabezado */
     header {
         position: relative;
         height: 150px;
         /* Altura más chiquita para el encabezado */
-        width: 99,10%;
+        width: 99, 10%;
         background-image: url('/images/posibleHeader.png');
         background-size: contain;
         /* Ajustar el tamaño de la imagen de fondo */
@@ -172,9 +241,9 @@ span {
         height: 200px;
         /* Mantener la relación de aspecto */
         border-radius: 50%;
-        
-       
-        
+
+
+
     }
 
     .menu {
@@ -182,7 +251,7 @@ span {
         font-size: large;
         position: fixed;
         width: 98.59%;
-        background-color:#FF0000;
+        background-color: #FF0000;
         z-index: 1000;
         opacity: 0.9;
         height: 11%;
@@ -196,13 +265,14 @@ span {
         /* Establecer margen izquierdo a 0 */
     }
 
-    .navigation a:hover{
+    .navigation a:hover {
         font-size: x-large;
     }
+
     ul,
     li,
     a {
-        background-color:#FF0000;
+        background-color: #FF0000;
         list-style: none;
         text-decoration: none;
         display: flex;
@@ -210,7 +280,8 @@ span {
         color: white;
         opacity: 0.9;
     }
- /*    .menu a:hover{
+
+    /*    .menu a:hover{
         font-size: xx-large;
         
     } */
@@ -222,10 +293,10 @@ span {
     section {
         display: flex;
     }
-  
+
     .grid_imagenes {
         display: grid;
-        background-color:#FF0000;
+        background-color: #FF0000;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5%;
         /* Ajusta el espacio horizontal entre las columnas */
@@ -268,7 +339,7 @@ span {
     div.seccion_texto,
     h1,
     p {
-        background-color:#FF0000;
+        background-color: #FF0000;
         border-radius: 1%;
         opacity: 0.9;
     }
@@ -293,7 +364,7 @@ span {
         width: 50%;
         margin: 0 auto;
         /* Esto centra el contenedor horizontalmente */
-        background-color:#FF0000;
+
         border-radius: 1%;
         margin-bottom: 5%;
         opacity: 0.9;
@@ -301,17 +372,35 @@ span {
 
     button img {
 
-      
-        
-       
-        /* Hace que las imágenes se ajusten al ancho del contenedor */
-        height: 5%;
-       
-        width: 5%;
-        
 
-    } 
-    
+
+
+        /* Hace que las imágenes se ajusten al ancho del contenedor */
+        height: 35%;
+
+        width: 35%;
+
+
+    }
+
+    .seccion_producto h1 {
+        font-size: xxx-large;
+
+    }
+
+    button {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 10%;
+        border-radius: 30px;
+        margin-left: 45%;
+    }
+
+    button img:hover {
+        height: 36%;
+        width: 36%;
+    }
+
     /* Estilo para el footer */
     footer {
 
@@ -347,12 +436,12 @@ span {
 
     .primer_footer,
     .tecnologias {
-        background-color:#FF0000;
+        background-color: #FF0000;
         opacity: 0.9;
     }
 
     .segundo_footer {
-        background-color:#FF0000;
+        background-color: #FF0000;
         font-size: large;
         opacity: 0.9;
     }
@@ -360,7 +449,7 @@ span {
     span {
         font-family: script;
         font-size: x-large;
-        background-color:#FF0000;
+        background-color: #FF0000;
         opacity: 0.9;
     }
 }
