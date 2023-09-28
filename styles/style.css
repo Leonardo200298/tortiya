@@ -81,8 +81,9 @@ body {
     .sacarlas_para_responsive {
         display: none;
     }
-    .hamburger-menu{
+    .hamburger-menu:hover{
         display: block;
+        opacity: 0.8;
     }
     
     .hamburger-menu img{
