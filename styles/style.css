@@ -231,21 +231,29 @@ body {
         background-image: url('/images/posibleHeader.png');
         background-size: contain;
         /* Ajustar el tamaño de la imagen de fondo */
-
+        
     }
+  
 
     /* Estilo logotipo */
     .logo {
-        margin-left: 43%;
-        width: 150px;
-        /* Ancho más chiquitologotipo */
-        height: 200px;
+        position: relative;
+        margin-left: 42%;
+       
         /* Mantener la relación de aspecto */
         border-radius: 50%;
-
+        height: 330px;
+        width: 420px;
+        top:-32%;
+        left:-8%
 
 
     }
+  /*   header .logo{
+        
+      
+        
+    } */
 
     .menu {
         font-family: script;
@@ -392,7 +400,7 @@ body {
     button {
         margin-top: 2%;
         margin-bottom: 2%;
-        width: 10%;
+        width: 12%;
         border-radius: 30px;
         margin-left: 45%;
     }
@@ -400,6 +408,9 @@ body {
     button img:hover {
         height: 36%;
         width: 36%;
+        background-color: rgb(70, 221, 70);
+        border-radius: 10px;
+        
     }
 
     /* Estilo para el footer */
