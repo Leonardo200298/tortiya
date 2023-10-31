@@ -1,7 +1,7 @@
 /* NUMERO_DESTINO = +542494634669
 MENSAJE_PREDETERMINADO = Hola!  */
 // Ahora puedes acceder a las variables de entorno como process.env.NUMERO_DESTINO y process.env.MENSAJE_PREDETERMINADO
-var numeroDestino = "+542494698885";
+var numeroDestino = "+542494497818";
 var mensajePredeterminado = "Hola,encargare mi tortiya";
 
 // Crea la función para abrir el enlace de WhatsApp
